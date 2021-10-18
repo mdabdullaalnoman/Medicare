@@ -1,3 +1,23 @@
-.hero-img img{
-width: 100%;
+.hero-warper{
+    background-image: url('../../meidia/bacgroundOne.jpg');
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+.hero-content {
+    width: 50%;
+}
+.hero-content h1{
+    font-size: 7rem;
+    color: #222;
+    margin: 0;
+    padding: 0;
+}
+.hero-content span{color: #0cb8b6;}
+
+.hero-content p{
+    font-size: 2rem ;
+    padding: 3rem 0;
+    color: #444;
+    text-align: justify;
 }

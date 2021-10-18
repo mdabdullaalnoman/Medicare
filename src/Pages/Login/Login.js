@@ -5,9 +5,9 @@ import { FaFacebook } from "@react-icons/all-files/fa/FaFacebook";
 import { FaGithub } from "@react-icons/all-files/fa/FaGithub";
 import { FaGoogle } from "@react-icons/all-files/fa/FaGoogle";
 import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
-import { IoArrowBackOutline } from "react-icons/io5";
 import './Login.css';
 import Navbar from '../Home/Navbar';
+import Footer from '../Home/Footer';
 
 
 
@@ -61,6 +61,7 @@ const Login = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
 
     );

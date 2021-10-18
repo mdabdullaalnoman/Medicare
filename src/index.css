@@ -102,6 +102,18 @@ code {
     margin-top: 2rem;
     width: 100%;
   }
+  /*------------------------ for hero section */
+
+.hero-content {
+    width: 100% !important;
+}
+.hero-content h1{
+    font-size: 4rem !important;
+}
+
+
+/* --------------------------for footer section */
+
   .footer{
     grid-template-columns: 1fr !important;
 }

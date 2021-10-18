@@ -41,9 +41,9 @@ const Navbar = () => {
 
                 <nav className={isActive ? 'navbar active' : 'navbar'}>
                     <NavLink to="/home" activeStyle={menuActive}>Home</NavLink>
-                    <NavLink to="/category" activeStyle={menuActive}>Category</NavLink>
-                    <NavLink to="/mobile-collection" activeStyle={menuActive}>Product</NavLink>
-                    <NavLink to="/shiping" activeStyle={menuActive}>Shiping</NavLink>
+                    <NavLink to="/aboutUs" activeStyle={menuActive}>About Us</NavLink>
+                    <NavLink to="/blogNews" activeStyle={menuActive}>Blog/News</NavLink>
+                    <NavLink to="/shop" activeStyle={menuActive}>Shop</NavLink>
                     <NavLink to="/login" activeStyle={menuActive}>Login</NavLink>
                 </nav>
 
