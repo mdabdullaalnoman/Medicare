@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../meidia/Header-logo.png'
 import './Navbar.css';
 
@@ -9,37 +9,29 @@ const Navbar = () => {
     const toggleClass = () => {
         setActive(!isActive);
     }
+    // menu-active class 
+    const menuActive = {
+        borderBottom: '2px solid #0cb8b6'
+    }
     return (
 
         <header id="home">
-            {/* Header - 1 */}
-            <div className="header-1">
-                <div className="share">
-                    <span>follow us:</span>
-                    <Link className="fab fa-facebook" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />
-                    <Link className="fab fa-twitter" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />
-                    <Link className="fab fa-linkedin" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />
-                </div>
-
-                <div className="header-contract share">
-                    <span>Call us:</span>
-                    <Link to="/notFound"> +88 01797701620</Link>
-                </div>
-
-            </div>
-
             <div className="header-2">
                 {/* Header ---- 2 */}
-
                 <Link to="/">
                     <img src={logo} alt="" />
                 </Link>
 
-                <form action="" className="search-bar-container">
-                    <input type="search" id="search-bar" placeholder="search here..." />
-                    <label htmlFor="search-bar" className="fas fa-search"></label>
-                </form>
+                <div className="nav-contract">
+                    <div className="contract-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div className="contract-content">
+                        <p>+880 124365454</p>
+                        <p>help@medicare.com</p>
+                    </div>
 
+                </div>
             </div>
 
             <div className="header-3">
@@ -48,17 +40,22 @@ const Navbar = () => {
                 <div id="menu-bar" onClick={toggleClass} className={isActive ? 'fas fa-times' : 'fas fa-bars'}></div>
 
                 <nav className={isActive ? 'navbar active' : 'navbar'}>
-                    <Link to="/home">Home</Link>
-                    <Link to="/category">Category</Link>
-                    <Link to="/mobile-collection">Product</Link>
-                    <Link to="/shiping">Shiping</Link>
-                    <Link to="/login">Login</Link>
+                    <NavLink to="/home" activeStyle={menuActive}>Home</NavLink>
+                    <NavLink to="/category" activeStyle={menuActive}>Category</NavLink>
+                    <NavLink to="/mobile-collection" activeStyle={menuActive}>Product</NavLink>
+                    <NavLink to="/shiping" activeStyle={menuActive}>Shiping</NavLink>
+                    <NavLink to="/login" activeStyle={menuActive}>Login</NavLink>
                 </nav>
 
+                <form action="" className="search-bar-container">
+                    <input type="search" id="search-bar" placeholder="search here..." />
+                    <label htmlFor="search-bar" className="fas fa-search"></label>
+                </form>
+
                 <div className="icons">
-                    <Link to="/home" className="fas fa-shopping-cart"></Link>
-                    <Link to="/home" className="fas fa-heart"></Link>
-                    <Link to="/home" className="fas fa-user-circle"></Link>
+                    <Link className="fab fa-facebook" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />
+                    <Link className="fab fa-twitter" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />
+                    <Link className="fab fa-linkedin" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />
                 </div>
             </div>
 
