@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "category":"DENTIST",
+        "tittle": "For your child whitest teeths",
+        "description": "Present convallis et enim laoreet vel consectetur purus latoque penatibus et dis parturient",
+        "img": "https://i.imgur.com/s4DKhF7.jpg"
+    },
+    {
+        "id": 2,
+        "tittle": "Got a broken heart",
+        "category":"CARDIOLOGIST",
+        "description": "Nullam elefend a tortor , non sodales ante vechcula. Proin consequat , at commodo",
+        "img": "https://i.imgur.com/4BirWJU.jpg"
+    },
+    {
+        "id": 3,
+        "tittle": "Neek or back pain ?",
+        "category":"CHIROPRATOR",
+        "description": "Prasent convallis et enim laoreet vel consectetur purus latoque penatibus et dis parturient",
+        "img": "https://i.imgur.com/t5e7geF.jpg"
+    },
+    {
+        "id": "4",
+        "category":"PEDIATRICIAN",
+        "tittle": "child medical care",
+        "description": "Objectively innovate empowered manufactured whereas whereas parallel platforms",
+        "img": "https://i.imgur.com/fs4YzV9.jpg"
+    },
+    {
+        "id": 5,
+        "category":"HEALTH CARE",
+        "tittle": "For all your family needs",  
+        "description": "Efficiently unleash cross-media information without cross-media value",
+        "img": "https://i.imgur.com/4VhjfIP.jpg"
+    },
+    {
+        "id": 6,
+        "category":"DENTIST",
+        "tittle": "For your whitest teeth",
+        "description": "Completely synergies resource taxing relationships via premier niche markets",
+        "img": "https://i.imgur.com/v7vtblt.jpg"
+    }
+]

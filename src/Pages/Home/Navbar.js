@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import useAuth from '../../Context/useAuth';
 import logo from '../../meidia/Header-logo.png'
 import './Navbar.css';
 
 const Navbar = () => {
+
+    const { user , handleSignOut} = useAuth();
+
     // toggle active class on menubar-------------------------------
     const [isActive, setActive] = useState(false);
     const toggleClass = () => {
         setActive(!isActive);
     }
-    // menu-active class 
+    // menu-active class-------------------------------------------- 
     const menuActive = {
         borderBottom: '2px solid #0cb8b6'
     }
@@ -24,7 +28,7 @@ const Navbar = () => {
 
                 <div className="nav-contract">
                     <div className="contract-icon">
-                        <i class="fas fa-mobile-alt"></i>
+                        <i className="fas fa-mobile-alt"></i>
                     </div>
                     <div className="contract-content">
                         <p>+880 124365454</p>
@@ -44,7 +48,13 @@ const Navbar = () => {
                     <NavLink to="/aboutUs" activeStyle={menuActive}>About Us</NavLink>
                     <NavLink to="/blogNews" activeStyle={menuActive}>Blog/News</NavLink>
                     <NavLink to="/shop" activeStyle={menuActive}>Shop</NavLink>
-                    <NavLink to="/login" activeStyle={menuActive}>Login</NavLink>
+                    {
+                        !user.displayName 
+                        ?
+                        <NavLink to="/login" activeStyle={menuActive}>Login</NavLink>
+                        :
+                        <NavLink to="/login" activeStyle={menuActive} onClick={handleSignOut}>Logout</NavLink>
+                    }
                 </nav>
 
                 <form action="" className="search-bar-container">
@@ -53,6 +63,7 @@ const Navbar = () => {
                 </form>
 
                 <div className="icons">
+                    <Link to="/">{user.displayName}</Link>
                     <Link className="fab fa-facebook" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />
                     <Link className="fab fa-twitter" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />
                     <Link className="fab fa-linkedin" to={{ pathname: "https://www.facebook.com/noman.apparel.4003" }} target="_blank" />

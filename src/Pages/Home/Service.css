@@ -1,0 +1,37 @@
+.our-service{
+    text-align: center;
+    padding-top: 8rem;
+    font-size: 3rem;
+}
+.serviceWarp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 3rem;
+   padding: 8rem 9%;
+}
+.single-service{
+    text-align: center;
+}
+.single-service img{
+    width: 100%;
+ height: 250px;
+}
+.single-service p{
+    color: #444;
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+.single-service h2{
+    padding: .5rem 0;
+    font-size: 2rem;
+}
+.single-service button{
+    background-color: turquoise;
+    border: 2px solid #0cb8b6;
+    padding: 1rem 2rem;
+    color: white;
+    font-size: 2rem;
+}
+.single-service button:hover{
+    background-color: #0cb8b6;
+}

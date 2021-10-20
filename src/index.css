@@ -111,7 +111,13 @@ code {
     font-size: 4rem !important;
 }
 
-
+/* service section  */
+.serviceWarp{
+  display: grid;
+  grid-template-columns: 1fr !important;
+ grid-gap: 1rem !important;
+ padding: 3rem 2% !important;
+}
 /* --------------------------for footer section */
 
   .footer{
