@@ -1,0 +1,21 @@
+.our-doctor{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom: 7rem;
+}
+.doctor-warp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3rem;
+    padding: 0 9%;
+    text-align: center;
+    padding-bottom: 7rem;
+}
+.doctor-warp .doctor img{
+    width: 100%;
+}
+.doctor-warp .doctor p{
+    font-size: 2.5rem;
+    color: #0cb8b6;
+    padding: .5rem 0;
+}
