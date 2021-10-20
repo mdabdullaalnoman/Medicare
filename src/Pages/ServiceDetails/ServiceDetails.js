@@ -1,6 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
-import { useState } from 'react/cjs/react.development';
+import Footer from '../Home/Footer';
+import Navbar from '../Home/Navbar';
+import './ServiceDetails.css';
 
 const ServiceDetails = () => {
     const { serviceId } = useParams();
@@ -13,16 +15,17 @@ const ServiceDetails = () => {
 
             .catch(error => console.log(error))
     }, [serviceId])
-
-
     const clickedService = services[serviceId];
-    console.log();
-
+    console.log(clickedService);
     return (
         <div>
-            <h1>thi is sservece details</h1>
-            <h1>{clickedService?.id}</h1>
-            <img src={clickedService?.img} alt="" />
+            <Navbar />
+            <div className="serviceDetails">
+                <h1>{clickedService?.category}</h1>
+                <img src={clickedService?.img} alt="" />
+                <p>{clickedService.description}</p>
+            </div>
+            <Footer />
         </div>
     );
 };

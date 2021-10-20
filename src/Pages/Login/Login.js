@@ -13,7 +13,7 @@ import Footer from '../Home/Footer';
 
 
 const Login = () => {
-    const { handleGoogleSignIn, message, setUser } = useAuth();
+    const { handleGoogleSignIn, message } = useAuth();
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [toggleLogin, setToggleLogin] = useState(false);
@@ -22,7 +22,6 @@ const Login = () => {
     const location = useLocation();
     const history = useHistory();
 
-    console.log(location.state?.from);
     // handle google signIn ----------------------------------------------
     const handleGoogleLogin = () => {
         handleGoogleSignIn()
@@ -61,17 +60,17 @@ const Login = () => {
     }
 
     // handle sign in user -----------------------------
-    const handleSignInUser = () => {
-        signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
-                // Signed in 
-                const user = userCredential.user;
-                console.log(user);
-            })
-            .catch((error) => {
-                console.log(error.message);
-            });
-    }
+    // const handleSignInUser = () => {
+    //     signInWithEmailAndPassword(auth, email, password)
+    //         .then((userCredential) => {
+    //             // Signed in 
+    //             const user = userCredential.user;
+    //             console.log(user);
+    //         })
+    //         .catch((error) => {
+    //             console.log(error.message);
+    //         });
+    // }
     return (
         <div>
             <Navbar />

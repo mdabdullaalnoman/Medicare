@@ -1,0 +1,12 @@
+.serviceDetails{
+    text-align: center;
+    padding: 3rem;
+}
+.serviceDetails p{
+    font-size: 1.6rem;
+    color: gray;
+}
+.serviceDetails h1{
+    padding: 1rem;
+    color: green;
+}
