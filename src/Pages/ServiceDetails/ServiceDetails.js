@@ -12,7 +12,7 @@ const ServiceDetails = () => {
             .then(data => setServices(data))
 
             .catch(error => console.log(error))
-    }, [])
+    }, [serviceId])
 
 
     const clickedService = services[serviceId];

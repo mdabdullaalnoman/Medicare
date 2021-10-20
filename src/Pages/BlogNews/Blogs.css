@@ -1,0 +1,21 @@
+.blog-tittle{
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 4rem;
+}
+.blogs{
+    padding-bottom: 3rem;
+}
+.blogs .blog h1{
+    color: #0cb8b6;
+    font-size: 3rem;
+}
+.blogs .blog h1:hover{
+   color: #074140;
+}
+.blogs .blog p{
+    font-size: 1.6rem;
+    padding-bottom: 2rem;
+    color: #444;
+
+}

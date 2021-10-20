@@ -1,0 +1,33 @@
+.products-warp{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    padding: 5rem 9%;
+    text-align: center;
+}
+.product{
+    height: 100px;
+    width: 100px;
+    background: green;
+    border-radius: 50%;
+    margin: auto;
+}
+.singleProduct{
+    border: 5px dotted red;
+    padding: 5rem;
+    margin: 2fr;
+}
+.singleProduct p{
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.singleProduct .buy-now button{
+    border: 2px solid mediumspringgreen;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    background: none;
+    margin-top: 1rem;
+}
+.singleProduct .buy-now button:hover{
+    background: moccasin;
+}

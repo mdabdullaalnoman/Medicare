@@ -142,4 +142,7 @@ code {
   .nav-contract{
     display: none !important;
   }
+  .products-warp{
+    grid-template-columns: 1fr !important;
+  }
 }

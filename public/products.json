@@ -1,0 +1,38 @@
+[
+    {   
+        "id" : 1,
+        "tittle": "BCI Adult Soft Boot",
+        "price": 20.00,
+        "img": ""
+    },
+    {
+        "id": 2,
+        "tittle": "Connext Vital Signs Monitor",
+        "price":21,
+        "img":""
+    },
+    {
+        "id": 3,
+        "tittle":"Digital Weight with memory",
+        "price":18.00,
+        "img":""
+    },
+    {
+        "id": 4,
+        "tittle":"Fully-enclosed Wooden Treatment ",
+        "price":11.00,
+        "img":""  
+    },
+    {
+        "id": 5,
+        "tittle":"Medi-Trance Cadence Defibrillation ",
+        "price":18.00,
+        "img":""  
+    },
+    {
+        "id": 6,
+        "tittle":"Digital Weight with memory",
+        "price":10.00,
+        "img":""  
+    }
+]
